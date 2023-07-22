@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Questions</title>
+</head>
+<body>
+    <h1>View Questions</h1>
+    <ul>
+        {% for question in questions %}
+        <li>
+            <h3>{{ question.title }}</h3>
+            <p>{{ question.content }}</p>
+            <p>Date Created: {{ question.date_created }}</p>
+            <a href="{% url 'post_answer' question.id %}">Answer</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

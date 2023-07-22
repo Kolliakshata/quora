@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post an Answer</title>
+</head>
+<body>
+    <h1>Post an Answer</h1>
+    <h3>Question: {{ question.title }}</h3>
+    <p>{{ question.content }}</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <label for="content">Your Answer:</label><br>
+        <textarea id="content" name="content" rows="4" cols="50" required></textarea><br>
+
+        <input type="submit" value="Post Answer">
+    </form>
+</body>
+</html>
