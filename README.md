@@ -3,10 +3,10 @@ This is a simple Quora website created using Django, where users can post questi
 
 Table of Contents
 --------------------
-Features
-Technologies Used
-Setup Instructions
-Usage
+Features,
+Technologies Used,
+Setup Instructions,
+Usage.
 
 Features
 --------------
